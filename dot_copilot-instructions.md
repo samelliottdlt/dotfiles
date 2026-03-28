@@ -32,14 +32,6 @@ These instructions apply when GitHub Copilot is operating in my home directory o
 - Wait for the user to confirm before proceeding.
 - For multi-step operations, outline the full plan first rather than executing step-by-step without approval.
 
-## Environment Context
-
-- **OS:** Arch Linux (CachyOS) — this is a rolling-release distribution; be mindful of package versions and AUR considerations.
-- **Shell:** fish (default), zsh (available)
-- **Package managers:** pacman, paru (AUR helper)
-- **Node.js:** Managed via fnm
-- **Dotfiles:** Managed via chezmoi (`~/.local/share/chezmoi`)
-
 ## Style Preferences
 
 - Be concise. Prefer short, clear explanations over verbose walkthroughs.
