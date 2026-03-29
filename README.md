@@ -35,20 +35,46 @@ choco install chezmoi
 winget install twpayne.chezmoi
 ```
 
-## Setup on a new machine
+## New machine setup
 
-Initialise and apply dotfiles in one command:
+### 1. Install chezmoi and apply dotfiles
 
 ```sh
 chezmoi init --apply samelliottdlt
 ```
 
-Or step by step:
+### 2. Install fnm (fast Node manager)
 
 ```sh
-chezmoi init samelliottdlt
-chezmoi diff   # review changes
-chezmoi apply  # apply to home directory
+# macOS
+brew install fnm
+
+# Arch Linux
+pacman -S fnm
+
+# Linux (other)
+curl -fsSL https://fnm.vercel.app/install | bash
+
+# Windows
+winget install Schniz.fnm
+```
+
+Then install Node:
+
+```sh
+fnm install --lts
+```
+
+### 3. Install [scripts](https://github.com/samelliottdlt/scripts)
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/samelliottdlt/scripts/main/install.sh | bash
+```
+
+### 4. Install remaining dev tools
+
+```sh
+s setup --install
 ```
 
 ## Day-to-day usage
