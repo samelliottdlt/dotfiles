@@ -1,5 +1,8 @@
 # Git configuration for delta (https://github.com/dandavison/delta)
-# Managed by chezmoi — included via [include] in ~/.gitconfig
+# Managed by chezmoi. To enable, add the following to your ~/.gitconfig:
+#
+#   [include]
+#       path = ~/.gitconfig-delta
 
 [core]
     pager = delta
